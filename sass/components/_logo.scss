@@ -1,0 +1,30 @@
+  .logo {
+    display: inline-block;
+    color: #000000;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  
+&--blue{
+    color: $interactive-element-color;
+}
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }}
+ 
+  @media screen and (max-width: 768px){
+   .logo{ 
+    margin-left: 15px;
+    margin-top: 14px;
+  }}
+  @media screen and (min-width: 1200px){
+  .logo{
+    margin-left: 93px;
+    margin-top: 24px;
+
+  }}
+  

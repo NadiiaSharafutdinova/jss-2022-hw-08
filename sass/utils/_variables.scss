@@ -1,0 +1,18 @@
+/*Main colors palette*/
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #2f303a;
+$section-bg-color: #f5f4fa;
+$title-text-color: #212121;
+$text-color: #757575;
+$interactive-element-color: #2196f3;
+$nav-link-color: #000000;
+$border-color: #eeeeee;
+$client-color: #afb1b8;
+$backdrop-color: rgba(47, 48, 58, 0.4);
+
+/*Font properties*/
+body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+    color: $text-color;
+  }

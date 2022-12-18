@@ -1,0 +1,82 @@
+@mixin background-icon($background-image){
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .features__list {
+   
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: $primary-bg-color;
+  }
+  
+  .feature{
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: $section-bg-color;
+    border-radius: 4px;
+  }
+      &__icon-antenna::before{
+      @include background-icon(
+        ( url(../image/antenna\ 1.png)
+      ))
+    }
+ 
+  &__icon-clock::before {
+    @include background-icon(
+       url(../image/clock\ 1.png))
+         }
+  &__icon-diagram::before {
+    @include background-icon(
+     url(../image/diagram1.png))
+    
+  }
+  &__icon-astronaut::before {
+    @include background-icon (url(../image/astronaut\ 1.png))
+  }
+  &__name {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 30px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }}
+  
+
+
+@media screen and (min-width: 480px) {
+    .feature:not(:last-child){
+        margin-bottom: 30px;
+    }
+    }
+@media screen and (min-width: 768px)
+{
+    .features__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}}
+@media screen and (min-width: 768px){
+.feature {
+        flex-basis: calc(50% - 30px);
+        margin: 15px;
+}}
+@media screen and (min-width:1200px) {
+    .feature{
+    flex-basis: calc((100% / 4) - 30px);
+    margin: 15px;
+}}
+    

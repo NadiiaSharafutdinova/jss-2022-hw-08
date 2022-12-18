@@ -1,0 +1,76 @@
+    @media screen and (min-width: 768px){ 
+    .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    justify-content: center;
+  } 
+ }
+.employee{
+  background-color: $section-bg-color;
+  }
+  .employee__card {
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+  
+    background-color: $primary-bg-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .employee__name {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .employee__description {
+    color: $text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .platforms__icon {
+    fill: $text-color;
+  }
+
+  .employee__platforms {
+    padding-left: 32px;
+    padding-bottom: 30px;
+    padding-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .platforms__link {
+    @extend %platforms;
+    background-color: inherit;
+        }
+  .platforms__link:hover,
+  .platforms__link:focus {
+    background-color: $interactive-element-color;
+  }  
+  .platforms__link:hover .platforms__icon,
+  .platforms__link:focus .platforms__icon{
+    fill: $primary-bg-color;
+  }
+  @media screen and (min-width: 768px){
+    .employee__image{
+      width: 354px;
+    }
+      }
+  @media screen and (min-width: 1200px){
+    .employee__image{
+       width: 260px;
+    }
+  }
+ @media screen and (min-width: 480px){
+  .employee__image{
+    max-width: 450px;
+  }
+   }
+ 

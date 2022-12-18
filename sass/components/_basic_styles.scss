@@ -1,0 +1,44 @@
+/*Border-box*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+  ul {
+    list-style: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+  }
+  img {
+    display: block;
+  }
+  ul,
+  li,
+  p a {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  @media screen and (min-width:1200px){
+h2{
+    font-size: 36px;
+line-height: 1.17;
+}
+  }
+  @media screen and (max-width: 1199px){
+    h2{
+      font-size: 28px;
+      line-height: 1.18;
+      padding-top: 60px;
+    }
+  }
