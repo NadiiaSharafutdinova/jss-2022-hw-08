@@ -202,11 +202,6 @@ a {
   line-height: 1.71;
 }
 
-@media screen and (min-width: 480px) {
-  .feature:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .features__list {
     display: -webkit-box;
@@ -277,7 +272,7 @@ a {
     display: none;
   }
 }
-.platforms__link {
+.platforms__link--footer, .platforms__link {
   display: inline-block;
   padding: 12px;
   height: 44px;
@@ -301,8 +296,9 @@ a {
             justify-content: center;
   }
 }
-.employee {
+.employees {
   background-color: #f5f4fa;
+  padding-bottom: 60px;
 }
 
 .employee__card {
@@ -380,8 +376,6 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -390,6 +384,7 @@ a {
 .client__item {
   width: 170px;
   height: 92px;
+  margin: 15px;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
@@ -412,21 +407,155 @@ a {
 
 @media screen and (min-width: 480px) {
   .client__item {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-    margin: 30px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
   .client__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
-    margin: 30px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .client__item {
-    -ms-flex-preferred-size: calc 100%;
-        flex-basis: calc 100%;
+    -ms-flex-preferred-size: calc((100% - 180px) / 6);
+        flex-basis: calc((100% - 180px) / 6);
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.footer__post,
+.footer__logo {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.logo--blue {
+  color: #2196f3;
+}
+
+.footer__post {
+  padding-top: 50px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.footer__contact {
+  padding-top: 9px;
+  padding-bottom: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.platforms__title,
+.signup__txt {
+  color: #f5f4fa;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.footer__platforms {
+  padding-left: 70px;
+}
+
+.platforms__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+.platforms__link--footer:hover, .platforms__link--footer:focus {
+  background-color: #2196f3;
+}
+
+.send {
+  margin-left: 10px;
+  position: absolute;
+  top: 13px;
+}
+
+.signup {
+  margin-left: 16px;
+  padding-left: auto;
+  margin-top: -15px;
+}
+.signup__button {
+  position: relative;
+  padding-left: 28px;
+  text-align: left;
+  width: 200px;
+  position: relative;
+}
+.signup__icon {
+  position: absolute;
+  right: 28px;
+  bottom: 13px;
+}
+.signup__input {
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .address__item {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer__platforms {
+    padding-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .platforms__title {
+    display: block;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

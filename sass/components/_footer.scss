@@ -1,0 +1,110 @@
+footer {
+    background-color: $secondary-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px){
+    .footer__container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  }
+  .footer__post,
+  .footer__logo {
+    color: $primary-bg-color;
+    margin-top: 0;
+    }
+
+  .logo--blue{
+    color: $interactive-element-color;
+  }
+  .footer__post {
+    padding-top: 50px;
+    font-style: normal;
+    font-size: 14px;
+  }
+  .footer__contact {
+    padding-top: 9px;
+    padding-bottom: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .platforms__title,
+  .signup__txt {
+    color: $section-bg-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+  .footer__platforms{
+    padding-left: 70px;
+  }
+  .platforms__link--footer {
+    @extend %platforms;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $primary-bg-color;
+      
+
+  &:hover,
+  &:focus {
+    background-color: $interactive-element-color;
+  }
+  }
+  .send{
+     margin-left: 10px;
+     position: absolute;
+     top: 13px;
+  
+  }
+  .signup{
+    margin-left: 16px;
+    padding-left: auto;
+    margin-top: -15px;
+  
+  &__button
+  {
+    position: relative;
+    padding-left: 28px;
+    text-align: left;
+    width: 200px;
+    position: relative;
+  }
+ &__icon{
+    position: absolute;
+    right: 28px;
+    bottom: 13px;
+  }
+ &__input{
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 20px;
+  }}
+  @media screen and (min-width: 480px){
+    .address__item{
+    display: block;
+    text-align: center;
+    }
+  }
+  @media screen and (min-width: 480px){
+    .footer__platforms{
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    }
+  }
+  @media screen and (min-width: 480px){
+    .platforms__title{
+        display: block;
+        text-align: center;
+    }
+  }
